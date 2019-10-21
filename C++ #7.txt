@@ -1,0 +1,11 @@
+auto_ptr
+배열 안됨
+대입연산자 사용시 없어짐
+
+share_ptr
+
+unique_ptr
+#include <memory> 필요
+배열 사용시 unique_ptr<int[]> buf(new int[10);
+클래스 사용시 unique_ptr<Point> buf(new Point);
+혼자 쓰는 포인터라 같이 가리킬 수 없음?
